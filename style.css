@@ -210,6 +210,47 @@ p.logo {
     width: 30px;
 }
 
+@media (max-width: 768px) {
+    header {
+        width: calc(100% - 40px);
+        padding: 0 20px;
+        height: 60px;
+    }
+
+    div.logo img:last-child {
+        display: none;
+    }
+
+    .links {
+        display: none;
+    }
+
+    .buttons {
+        gap: 8px;
+    }
+
+    .buttons > button:first-child {
+        display: none;
+    }
+
+    .buttons > button:not(:first-child) {
+        width: 44px;
+        height: 44px;
+    }
+
+    .buttons > button > img {
+        width: 22px;
+    }
+
+    .nav-up {
+        top: -60px;
+    }
+}
+
+
+
+
+
 
 div.hero {
     background-color: var(--hero-bg-color);
@@ -271,6 +312,8 @@ p.hero_subtitle {
 .hero_button:hover {
     transform: translateY(-1px) scale(1.03);
 }
+
+
 
 
 
@@ -398,6 +441,90 @@ p.hero_subtitle {
     font-size: 24px;
 }
 
+@media (max-width: 768px) {
+    div.hero {
+        gap: 40px;
+        padding-top: 80px;
+        padding-bottom: 40px;
+    }
+
+    div.hero_1 {
+        height: 350px;
+        background-size: cover;
+        background-position: center;
+    }
+
+    p.hero_title {
+        font-size: 42px;
+        text-align: center;
+    }
+
+    p.hero_title.medium {
+        font-size: 32px;
+    }
+
+    p.hero_subtitle {
+        font-size: 16px;
+        text-align: center;
+        padding: 0 20px;
+        margin-bottom: 24px;
+    }
+
+    .hero_2 {
+        padding: 0 20px;
+        width: calc(100% - 40px);
+    }
+
+    .team__card {
+        flex-direction: column;
+    }
+
+    .team__image {
+        height: 300px;
+    }
+
+    .ontop {
+        width: 100%;
+        min-height: auto;
+        padding: 20px;
+        border-radius: 0;
+        position: static;
+    }
+
+    .ontop::before,
+    .ontop::after {
+        display: none;
+    }
+
+    .team__infocards {
+        gap: 15px;
+    }
+
+    .team__info {
+        width: 100%;
+        height: 120px;
+        padding: 0 30px;
+        box-sizing: border-box;
+    }
+
+    .team__title {
+        font-size: 28px;
+    }
+
+    .team__subtitle {
+        font-size: 16px;
+    }
+
+    .ontop_msg {
+        font-size: 18px;
+        text-align: center;
+    }
+}
+
+
+
+
+
 
 
 .sec {
@@ -477,6 +604,46 @@ p.adv__card_subtitle {
     font-size: 18px;
     opacity: 0.6;
 }
+
+@media (max-width: 768px) {
+    .sec {
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 40px;
+        gap: 30px;
+    }
+
+    p.title {
+        font-size: 40px;
+    }
+
+    div.cardline {
+        flex-direction: column;
+        height: auto;
+        width: 100%;
+    }
+
+    div.adv__card {
+        width: auto;
+        aspect-ratio: auto;
+        padding: 30px;
+        border-radius: 30px;
+        gap: 15px;
+    }
+
+    div.adv__card_icon {
+        margin-bottom: 5px;
+    }
+
+    p.adv__card_title {
+        font-size: 24px;
+    }
+
+    p.adv__card_subtitle {
+        font-size: 16px;
+    }
+}
+
 
 
 
@@ -604,6 +771,65 @@ p.adv__card_subtitle {
     transform: scale(1.05);
     box-shadow: 0 0 20px #00000055;
 }
+
+@media (max-width: 768px) {
+    .cat__table {
+        gap: 20px;
+    }
+
+    .cat__row {
+        flex-direction: column;
+        width: 100%;
+        gap: 20px;
+    }
+
+    .cat__cell {
+        width: 100%;
+        border-radius: 30px;
+    }
+
+    .cat__image {
+        width: 100%;
+    }
+
+    .cat__image > img {
+        width: 100%;
+        height: 240px;
+        object-fit: cover;
+    }
+
+    .cat__info {
+        width: calc(100% - 60px);
+        height: auto;
+        padding: 30px;
+        gap: 15px;
+    }
+
+    .cat__name {
+        font-size: 32px;
+    }
+
+    .cat__price {
+        font-size: 18px;
+    }
+
+    .cat__more {
+        font-size: 18px;
+        padding: 12px;
+    }
+
+    .cat__gotocat {
+        width: 100%;
+        padding: 18px;
+        font-size: 18px;
+    }
+}
+
+
+
+
+
+
 
 
 
@@ -848,6 +1074,194 @@ button.sal__swiper_button:hover {
     border-radius: 40px;
 }
 
+@media (max-width: 768px) {
+    .sal_sec {
+        padding: 40px 20px;
+    }
+
+    .sal__swiper_slide {
+        flex-direction: column;
+        flex: 0 0 100%;
+        width: 100%;
+    }
+
+    .sal__swiper_slide_image img {
+        width: 100%;
+        height: 200px;
+        border-radius: 20px 20px 0 0;
+    }
+
+    .sal__swiper_slide_info {
+        padding: 20px;
+        gap: 0px;
+        border-radius: 0 0 20px 20px;
+    }
+
+    .sal__swiper_slide_info_sec1 {
+        padding-top: 40px;
+        gap: 10px;
+    }
+
+    .sal__sal_badge {
+        font-size: 16px;
+    }
+
+    p.sal__sal_hint {
+        font-size: 20px;
+        width: 80%;
+        font-weight: 100;
+
+        color: #111111bb;
+    }
+
+    p.sal__sal_price {
+        font-size: 26px;
+        font-weight: 900;
+    }
+
+    button.sal__swiper_button {
+        height: 60px;
+        width: 60px;
+        background: var(--main-bg-color);
+        border: none;
+        border-radius: 20px;
+        outline: none;
+        cursor: pointer;
+        transition: 0.4s;
+    }
+
+    button.sal__swiper_button:hover {
+        box-shadow: 0 0 20px #00000000;
+        background-color: #EDECEA;
+    }
+
+    .sal__buttons {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    #salButtonPrev {
+        position: relative;
+        left: -1px;
+        border-radius: 0 20px 20px 0;
+        bottom: 266px;
+    }
+
+    #salButtonPrev::before {
+        content: "";
+        position: absolute;
+        width: 20px;
+        height: 20px;
+
+        bottom: 60px;
+        left: 0px;
+
+
+        background: radial-gradient(circle at top right, transparent 20px, #EDECEA 20px);
+    }
+
+    #salButtonPrev::after {
+        content: "";
+        position: absolute;
+        width: 20px;
+        height: 20px;
+
+        top: 60px;
+        left: 0px;
+
+
+        background: radial-gradient(circle at bottom right, transparent 20px, #EDECEA 20px);
+    }
+
+    #salButtonNext {
+        position: relative;
+        right: -1px;
+        border-radius: 20px 0 0 20px;
+        bottom: 266px;
+    }
+
+    #salButtonNext::before {
+        content: "";
+        position: absolute;
+        width: 20px;
+        height: 20px;
+
+        bottom: 60px;
+        right: 0px;
+
+
+        background: radial-gradient(circle at top left, transparent 20px, #EDECEA 20px);
+    }
+
+    #salButtonNext::after {
+        content: "";
+        position: absolute;
+        width: 20px;
+        height: 20px;
+
+        top: 60px;
+        right: 0px;
+
+
+        background: radial-gradient(circle at bottom left, transparent 20px, #EDECEA 20px);
+    }
+
+
+
+
+
+
+    .promo_mort {
+        flex-direction: column-reverse;
+        gap: 40px;
+    }
+
+    .promo__side {
+        width: 100%;
+    }
+
+    .promo__form_row {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .promo__form_part {
+        width: 100%;
+    }
+
+    .promo__form_part_input {
+        width: calc(100% - 40px);
+        font-size: 16px;
+        padding: 15px 20px;
+    }
+
+    .promo__subtitle {
+        font-size: 24px;
+        text-align: center;
+    }
+
+    .promo__hint {
+        text-align: center;
+        font-size: 14px;
+    }
+
+    .promo__image {
+        height: 250px;
+        border-radius: 20px;
+    }
+
+    .promo__button {
+        padding: 18px 0;
+        font-size: 18px;
+
+    }
+}
+
+
+
+
+
 
 
 .partners__list {
@@ -872,6 +1286,35 @@ button.sal__swiper_button:hover {
 .partners__card > img {
     width: 220px;
 }
+
+@media (max-width: 768px) {
+    .par_sec {
+        /* padding: 40px 20px; */
+        position: relative;
+        top: 160px;
+        margin-bottom: 180px;
+    }
+
+    .partners__list {
+        gap: 10px;
+    }
+
+    .partners__card {
+        width: calc(50% - 5px);
+        height: 100px;
+        border-radius: 15px;
+    }
+
+    .partners__card > img {
+        width: 80%;
+        max-width: 140px;
+        object-fit: contain;
+    }
+}
+
+
+
+
 
 
 
@@ -960,6 +1403,52 @@ button.sal__swiper_button:hover {
     color: #fff;
 }
 
+@media (max-width: 768px) {
+    .faq_sec {
+        padding: 40px 20px;
+    }
+
+    .faq__accs {
+        gap: 12px;
+    }
+
+    .faq__acc_header {
+        width: auto;
+        padding: 20px;
+        font-size: 18px;
+        line-height: 1.2;
+    }
+
+    .faq__acc_header p {
+        padding-right: 15px;
+    }
+
+    .faq__acc_open {
+        min-width: 36px;
+        height: 36px;
+        border-radius: 8px;
+    }
+
+    .faq__acc_header img {
+        width: 16px;
+        padding: 0;
+    }
+
+    .faq__acc_content {
+        font-size: 15px;
+        line-height: 1.5;
+        padding: 0 20px;
+    }
+
+    .faq__acc.active .faq__acc_content {
+        max-height: 500px;
+        padding: 20px;
+    }
+}
+
+
+
+
 
 
 
@@ -1029,6 +1518,57 @@ p.que__hint, p.que__form_label {
     color: #fff;
 }
 
+@media (max-width: 768px) {
+    .que_sec {
+        padding: 40px 20px;
+    }
+
+    .que__wrapper {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .que__form_wrapper, 
+    .que__map {
+        width: 100%;
+        aspect-ratio: auto;
+    }
+
+    .que__form_wrapper {
+        padding: 30px 20px;
+        gap: 25px;
+    }
+
+    .que__form {
+        gap: 20px;
+    }
+
+    p.title {
+        font-size: 32px;
+        line-height: 1.1;
+    }
+
+    .que__map {
+        height: 350px;
+    }
+
+    .que__form_input {
+        padding: 15px;
+    }
+
+    .que__button {
+        padding: 18px 0;
+    }
+
+    p.que__hint {
+        font-size: 14px;
+        text-align: center;
+    }
+}
+
+
+
+
 
 
 
@@ -1080,4 +1620,37 @@ p.que__hint, p.que__form_label {
 .footer__cell_item {
     color: #fff;
     font-size: 20px;
+}
+
+@media (max-width: 768px) {
+    .footer.sec {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 40px 20px;
+        gap: 40px;
+        margin-top: 40px;
+    }
+
+    .footer__cell {
+        width: 100%;
+        gap: 15px;
+    }
+
+    .footer__cell_title {
+        font-size: 32px;
+    }
+
+    .footer__cell_title img {
+        width: 30px;
+        padding-bottom: 5px;
+    }
+
+    .footer__cell_item {
+        font-size: 16px;
+        line-height: 1.4;
+    }
+
+    .footer__cell_items {
+        gap: 8px;
+    }
 }
